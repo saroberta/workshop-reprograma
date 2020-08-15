@@ -1,0 +1,157 @@
+*{    
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.banner{
+    background-image: url(../img/flower.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;  
+    background-position: center;  
+    height: 560px;    
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-filha{
+    text-align: center;
+}
+
+.banner-titulo{
+   font-size: 48px;
+   margin-bottom: 20px; 
+   text-shadow:  1px 1px 2px black;
+}
+
+.banner-subtitulo{
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-shadow:  1px 1px 2px black;
+}
+
+.banner-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-shadow:  1px 1px 2px rgb(243, 229, 229);
+    color: rgb(109, 51, 109);
+    background-color: white;    
+    padding: 10px 20px 10px 20px;    
+    border-radius: 30px;
+    height: 20px;
+    border: 1px solid rgb(61, 37, 61);
+}
+
+.redes-link:hover{
+    opacity: 0.8;
+}
+
+.titulo-sobre{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #7E459B;
+}
+
+.sobre-caixa{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 18px;
+}
+
+
+.texto-resumo{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.texto-italic{
+    font-style: italic;    
+}
+
+.sobre-resumo{
+  width: 30%;  
+  text-align: justify;
+}
+
+.sobre-link{
+    text-decoration: none;    
+}
+
+.sobre-habilidades{
+    width: 20%;
+}
+
+
+.sobre-lista{
+    margin-top: 50px;
+    line-height: 30px;
+}
+
+.redes{
+    margin-top: 40px;
+    font-size: small;
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+
+.redes-link{
+    background-color: #7E459B;
+    text-align: center;
+    padding: 02px;
+    border-radius: 02px;
+    color: white;
+    text-decoration: none;
+}
+
+.redes-titulo{
+    margin-top: 2px;
+    margin-bottom: 9px;
+}
+
+
+@media(max-width:800px){
+    .sobre-caixa{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobre-resumo{
+        width: 70%;         
+      }
+
+      .sobre-habilidades{
+        width: 50%;
+    }
+
+    .titulo-habilidades{
+        margin-top: 40px;        
+    }
+    
+    .sobre-lista{
+        margin-top: 10px;
+    }
+}
+
+@media(max-width:720px){
+    .redes{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .redes-link{
+        width: 70%;
+        margin-top: 30px;
+    }
+}
+
